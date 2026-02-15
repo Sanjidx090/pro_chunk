@@ -1,0 +1,136 @@
+════════════════════════════════════════════════════════════════════════
+SIMPLE CHECKLIST: AUTOMATED WORKFLOW
+════════════════════════════════════════════════════════════════════════
+
+ONE-TIME SETUP (2 minutes)
+---------------------------
+□ Download auto_sync_downloader.py from Claude
+□ Edit line 14: GITHUB_REPO = "https://github.com/Sanjidx090/ytranscript.git"
+□ Save the file
+□ Done! Use this file on ALL platforms
+
+
+KAGGLE SESSION
+--------------
+□ Upload: auto_sync_downloader.py
+□ Upload: videos_with_bangla.csv
+□ Run: !python auto_sync_downloader.py
+□ Wait until rate limited or batch completes
+□ See "✅ Pushed to GitHub!"
+□ DONE! Close Kaggle, move to next platform
+
+NO NEED TO:
+❌ Download the bangla_transcripts folder
+❌ Upload anything to GitHub manually
+❌ Do anything else!
+
+
+COLAB SESSION
+-------------
+□ Upload: auto_sync_downloader.py (same file from Kaggle)
+□ Upload: videos_with_bangla.csv
+□ Run: !python auto_sync_downloader.py
+□ Wait until rate limited or batch completes
+□ See "✅ Pushed to GitHub!"
+□ DONE! Close Colab, move to next platform
+
+NO NEED TO:
+❌ Clone repo manually
+❌ Download anything
+❌ Upload anything
+
+
+GITHUB CODESPACES SESSION
+--------------------------
+□ Upload: auto_sync_downloader.py
+□ Upload: videos_with_bangla.csv
+□ Run: python auto_sync_downloader.py
+□ Wait until rate limited or batch completes
+□ See "✅ Pushed to GitHub!"
+□ DONE! Close Codespaces, move to next platform
+
+
+REPEAT FOR ALL 6 PLATFORMS
+---------------------------
+□ Platform 1 (Kaggle)     → ~18 videos
+□ Platform 2 (Colab)      → ~68 total
+□ Platform 3 (Codespaces) → ~118 total
+□ Platform 4 (Colab 2)    → ~168 total
+□ Platform 5 (Kaggle 2)   → ~218 total
+□ Platform 6 (Any)        → ~275 total ✅
+
+
+WHEN ALL DONE
+-------------
+□ Go to: github.com/Sanjidx090/ytranscript
+□ See all 275 video folders!
+□ Clone when ready: git clone https://github.com/Sanjidx090/ytranscript.git
+□ Or download as ZIP
+
+
+════════════════════════════════════════════════════════════════════════
+KEY THINGS TO REMEMBER
+════════════════════════════════════════════════════════════════════════
+
+✅ Use auto_sync_downloader.py (NOT smart_chunk_downloader.py)
+✅ Same script on ALL platforms (just upload and run)
+✅ Script handles EVERYTHING (pull, download, push)
+✅ NO manual downloads or uploads needed
+✅ Just run and move to next platform
+
+
+════════════════════════════════════════════════════════════════════════
+WHAT YOU'LL SEE
+════════════════════════════════════════════════════════════════════════
+
+Starting the script:
+  📥 PULLING FROM GITHUB
+  ✅ Pulled successfully
+  ✅ Already downloaded: 18 videos (from GitHub or local)
+
+While downloading:
+  📥 [19/275] Downloading: HPLgIcZZdx4
+  ✅ Success: 12 chunks, avg 24.8s each
+
+When finished:
+  📤 PUSHING TO GITHUB
+  ✅ Pushed to GitHub!
+  
+  ✅ BATCH COMPLETE
+  📦 68 videos synced to GitHub
+
+
+════════════════════════════════════════════════════════════════════════
+TROUBLESHOOTING
+════════════════════════════════════════════════════════════════════════
+
+If you see: "Push failed"
+→ Make sure repo is public
+→ Or add GitHub token to GITHUB_TOKEN
+
+If you see: "Nothing to push"
+→ Normal! Means script hit rate limit immediately
+
+If rate limited after few videos:
+→ Perfect! Just move to next platform
+→ Script already pushed what it downloaded
+
+
+════════════════════════════════════════════════════════════════════════
+TIME SAVINGS
+════════════════════════════════════════════════════════════════════════
+
+Manual workflow per platform:
+  5 min  - Wait for download from platform
+  3 min  - Upload to GitHub
+  2 min  - Clone on next platform
+  ────────
+  10 min per platform × 6 = 60 minutes wasted
+
+Automated workflow per platform:
+  0 min  - Script does everything
+  ────────
+  0 minutes! Just switch platforms when done
+
+
+════════════════════════════════════════════════════════════════════════
